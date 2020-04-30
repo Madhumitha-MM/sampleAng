@@ -1,0 +1,15 @@
+<p>posts works!</p>
+<div *ngFor="let item of (response | async)">
+    <table border="2" align="center">
+        <thead>
+        <tr> <th>User id</th>&nbsp;  </tr>
+        <tr> <th>title</th>&nbsp;  </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of (response|async)">
+                <td>{{item.userId}}</td>
+                <td>{{item.title}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

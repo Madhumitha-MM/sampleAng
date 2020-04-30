@@ -1,0 +1,15 @@
+<p>employee works!</p>
+<table border="2" align="center">
+    <thead>
+
+        <th>id</th>&nbsp;
+        <th>emp_name</th>&nbsp;
+
+    </thead>
+<tr>
+            <div *ngFor="let item of response">
+            <td>{{item.id}}</td>
+            <td>{{item.employee_name}}</td>
+        </div>
+</tr>
+</table>
